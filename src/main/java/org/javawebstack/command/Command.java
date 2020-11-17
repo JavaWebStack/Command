@@ -5,6 +5,6 @@ import java.util.Map;
 
 public interface Command {
 
-    CommandResult execute(List<String> args, Map<String, String> params);
+    CommandResult execute(CommandSystem system, List<String> args, Map<String, List<String>> params);
 
 }

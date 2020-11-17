@@ -14,15 +14,15 @@ public class CommandTest {
     public CommandTest(){
         system = new CommandSystem()
                 .addCommand("sub", new MultiCommand()
-                    .add("inner", (args, params) -> {
+                    .add("inner", (system, args, params) -> {
                         if(!params.containsKey("r"))
                             return CommandResult.error("r");
-                        if(params.containsKey("string") && !params.get("string").equals("test"))
+                        if(params.containsKey("string") && !params.get("string").contains("test"))
                             return CommandResult.error("string");
                         return CommandResult.success();
                     })
                 )
-                .addCommand("simple", (args, params) -> CommandResult.success());
+                .addCommand("simple", (sytem, args, params) -> CommandResult.success());
     }
 
     @Test
