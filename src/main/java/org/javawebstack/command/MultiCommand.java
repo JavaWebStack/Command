@@ -16,7 +16,8 @@ public class MultiCommand implements Command {
         for(int i=1; i<args.size(); i++)
             childArgs.add(args.get(i));
         Command child = childCommands.get(args.get(0));
-        system.getInjector().inject(child);
+        if(system.getInjector() != null)
+            system.getInjector().inject(child);
         return child.execute(system, childArgs, params);
     }
     public MultiCommand add(String name, Command command){

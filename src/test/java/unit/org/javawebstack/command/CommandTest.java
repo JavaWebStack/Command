@@ -22,7 +22,7 @@ public class CommandTest {
                         return CommandResult.success();
                     })
                 )
-                .addCommand("simple", (sytem, args, params) -> CommandResult.success());
+                .addCommand("simple", (system, args, params) -> CommandResult.success());
     }
 
     @Test
