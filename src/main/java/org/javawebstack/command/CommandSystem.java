@@ -67,6 +67,9 @@ public class CommandSystem {
             case "error":
                 System.err.println("Error: " + result.getError());
                 break;
+            case "syntax":
+                System.err.println("Syntax: " + result.getError());
+                break;
         }
     }
 

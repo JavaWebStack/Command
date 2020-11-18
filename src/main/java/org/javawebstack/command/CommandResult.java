@@ -49,6 +49,12 @@ public class CommandResult {
         return result;
     }
 
+    public static CommandResult syntax(String syntax){
+        CommandResult result = new CommandResult("syntax");
+        result.error = syntax;
+        return result;
+    }
+
     public static CommandResult notFound(String command){
         CommandResult result = new CommandResult("notFound");
         result.error = command;
