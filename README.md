@@ -11,6 +11,9 @@ JWS CLI System
 ![Discord](https://img.shields.io/discord/815612319378833408?color=%237289DA&label=discord)
 ![Twitter Follow](https://img.shields.io/twitter/follow/JavaWebStack?style=social) 
 
+## !!! DISCONTINUED !!!
+Use [picocli](https://github.com/remkop/picocli) or something else instead!
+
 ## Introduction
 A very simple command system
 
